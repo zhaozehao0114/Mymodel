@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bawei.http">
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application>
+        <meta-data android:name="authCode" android:value="fe11c1cf11e1ac10c17412a1cb1631f01c211d1aa1061341"></meta-data>
+    </application>
+</manifest>
