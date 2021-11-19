@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+<com.bawei.mvvmzg5.MySearchView
+    android:cursorVisible="false"
+    android:hint=" 搜索"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></com.bawei.mvvmzg5.MySearchView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索历史:"
+        android:textSize="20dp"></TextView>
+    <com.bawei.mvvmzg5.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.bawei.mvvmzg5.MyTextView
+            android:padding="5dp"
+            android:gravity="center"
+
+            android:text="iphone11 pro max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.bawei.mvvmzg5.MyTextView>
+        <com.bawei.mvvmzg5.MyTextView
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="小米"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.bawei.mvvmzg5.MyTextView>
+        <com.bawei.mvvmzg5.MyTextView
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="平板电脑"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.bawei.mvvmzg5.MyTextView>
+        <com.bawei.mvvmzg5.MyTextView
+            android:text="扫地机器人"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.bawei.mvvmzg5.MyTextView>
+        <com.bawei.mvvmzg5.MyTextView
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="剃须刀"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.bawei.mvvmzg5.MyTextView>
+        <com.bawei.mvvmzg5.MyTextView
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="华硕"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.bawei.mvvmzg5.MyTextView>
+        <com.bawei.mvvmzg5.MyTextView
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="IPhone13 pro max (远峰蓝)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.bawei.mvvmzg5.MyTextView>
+    </com.bawei.mvvmzg5.FlowLayout>
+</LinearLayout>
