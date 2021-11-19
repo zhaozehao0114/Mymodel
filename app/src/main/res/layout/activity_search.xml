@@ -9,6 +9,7 @@
 <com.bawei.mvvmzg5.MySearchView
     android:cursorVisible="false"
     android:hint=" 搜索"
+    app:colora="#4CAF50"
     android:layout_marginLeft="30dp"
     android:layout_marginRight="30dp"
     android:layout_width="match_parent"
@@ -20,11 +21,10 @@
         android:textSize="20dp"></TextView>
     <com.bawei.mvvmzg5.FlowLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="300dp">
         <com.bawei.mvvmzg5.MyTextView
             android:padding="5dp"
             android:gravity="center"
-
             android:text="iphone11 pro max"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"></com.bawei.mvvmzg5.MyTextView>
@@ -65,4 +65,63 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"></com.bawei.mvvmzg5.MyTextView>
     </com.bawei.mvvmzg5.FlowLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.bawei.mvvmzg5.MyEditText
+
+            android:id="@+id/et1"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.bawei.mvvmzg5.MyEditText>
+        <com.bawei.mvvmzg5.MyEditText
+
+            android:id="@+id/et2"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.bawei.mvvmzg5.MyEditText>
+        <com.bawei.mvvmzg5.MyEditText
+
+            android:id="@+id/et3"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.bawei.mvvmzg5.MyEditText>
+        <com.bawei.mvvmzg5.MyEditText
+
+            android:id="@+id/et4"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.bawei.mvvmzg5.MyEditText>
+        <com.bawei.mvvmzg5.MyEditText
+
+            android:id="@+id/et5"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.bawei.mvvmzg5.MyEditText>
+        <com.bawei.mvvmzg5.MyEditText
+            android:id="@+id/et6"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.bawei.mvvmzg5.MyEditText>
+
+    </LinearLayout>
+
 </LinearLayout>

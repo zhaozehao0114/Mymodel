@@ -1,6 +1,7 @@
 package com.bawei.mvvmzg5;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -14,6 +15,7 @@ import androidx.annotation.Nullable;
 public class MySearchView extends androidx.appcompat.widget.AppCompatEditText {
     private Paint mPaint;
     private RectF rectF;
+    int color=Color.BLACK;
     public MySearchView(@NonNull  Context context) {
         super(context);
         initPaint();
@@ -23,7 +25,13 @@ public class MySearchView extends androidx.appcompat.widget.AppCompatEditText {
 
     public MySearchView(@NonNull  Context context, @Nullable  AttributeSet attrs) {
         super(context, attrs);
+
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.MySearchView);
+
+        color = typedArray.getColor(R.styleable.MySearchView_colora, Color.RED);
+
         initPaint();
+
     }
 
     public MySearchView(@NonNull  Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
@@ -34,7 +42,7 @@ public class MySearchView extends androidx.appcompat.widget.AppCompatEditText {
         mPaint=new Paint();
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeWidth(5);
-        mPaint.setColor(Color.RED);
+        mPaint.setColor(color);
         setBackground(null);
     }
     private float rx=30.0f;

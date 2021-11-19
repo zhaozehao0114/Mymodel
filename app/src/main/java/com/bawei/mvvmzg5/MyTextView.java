@@ -31,7 +31,7 @@ public class MyTextView extends androidx.appcompat.widget.AppCompatTextView {
    public void initPaint(){
         mPaint=new Paint();
         mPaint.setColor(Color.BLACK);
-        mPaint.setStrokeWidth(3);
+        mPaint.setStrokeWidth(2);
         mPaint.setStyle(Paint.Style.STROKE);
     }
 
@@ -39,7 +39,7 @@ public class MyTextView extends androidx.appcompat.widget.AppCompatTextView {
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
 
-        rectF = new RectF(0,0,getMeasuredWidth(),getMeasuredHeight());
+        rectF = new RectF(1,1,w-1,h-1);
     }
 
     @Override
